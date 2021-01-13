@@ -6,3 +6,19 @@ $colour-third: #99e2d0;
 // Functions
 
 //Mixins
+
+
+
+
+// Example
+/*
+.nav {
+    color: white;
+    &__link {
+        color: white;
+        &--active {
+            color: white;
+        }
+    }
+}
+*/
