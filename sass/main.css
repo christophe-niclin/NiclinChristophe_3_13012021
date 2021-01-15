@@ -1,0 +1,52 @@
+/*
+.nav {
+    color: white;
+    &__link {
+        color: white;
+        &--active {
+            color: white;
+        }
+    }
+}
+*/
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.header__accueil {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.header__accueil--logo {
+  height: 1.6em;
+}
+
+.section__tracking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eeeeee;
+  height: 3em;
+  -webkit-box-shadow: inset 0px 11px 10px -15px grey;
+          box-shadow: inset 0px 11px 10px -15px grey;
+}
+
+.section__tracking--icon {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 1em;
+  font-size: 0.9em;
+}
+
+.section__tracking--city {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 0.9em;
+}
+/*# sourceMappingURL=main.css.map */

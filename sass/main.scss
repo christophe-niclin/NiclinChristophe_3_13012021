@@ -22,3 +22,32 @@ $colour-third: #99e2d0;
     }
 }
 */
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.header__accueil {
+    padding: 0.5em;
+    text-align: center;    
+    &--logo  {
+        height: 1.6em;
+    }
+}
+.section__tracking {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    height: 3em;
+    box-shadow: inset 0px 11px 10px -15px grey;
+    &--icon {
+        align-self: center;
+        padding-right: 1em;
+        font-size: 0.9em;
+
+    }
+    &--city {
+        align-self: center;
+        font-size: 0.9em;
+
+    }
+}
