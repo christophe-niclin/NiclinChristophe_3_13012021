@@ -26,6 +26,7 @@ $colour-third: #99e2d0;
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
 .header {
     padding: 0.5em;
     text-align: center;
@@ -50,4 +51,99 @@ body {
         font-size: 0.9em;
 
     }
+}
+.hero {
+    padding: 1em 2em 2em 2em;
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+
+
+    &__titre {
+        margin-bottom: 0;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    &__text {
+        color: grey;
+        margin-top: 0.5em;
+        padding-bottom: 1em;
+    }
+
+}
+.button {
+    padding: 1em 1.2em 1em 1.2em;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgb(202, 202, 202);
+}
+.button--hero {
+    margin-bottom: 1em;
+}
+
+.operation {
+    padding: 1em;
+
+    &__titre {}
+}
+
+.step {
+    display: flex;
+    position: relative;
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgb(202, 202, 202);
+
+    &__icon {
+        padding-left: 2em;
+        align-self: center;
+    }
+    &__text {
+        padding-left: 1.5em;
+    }
+    &__number-left {
+        display: flex;
+        background-color: $colour-primary;
+        position: absolute;
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 50%;
+        align-self: center;
+        justify-content: center;
+        left: -10px;
+        &-number {
+            align-self: center;
+            color: white;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        
+    }
+}
+
+.restaurant {
+
+    &__titre {}
+}
+
+.card {
+     
+    &__image {}
+    &__titre {}
+    &__text {}
+    &__heart {}
+    &__new-mint {}
+
+}
+
+.footer {
+
+    &__logo {}
+    &__icon {}
+    &__a {}
 }
