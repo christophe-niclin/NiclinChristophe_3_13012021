@@ -22,7 +22,6 @@ $colour-third: #99e2d0;
     }
 }
 */
-
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
@@ -127,17 +126,41 @@ body {
 }
 
 .restaurant {
+    padding: 1em;
+    background-color: rgb(247, 247, 247);
+    padding-top: 2em;
+
 
     &__titre {}
 }
 
 .card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgb(202, 202, 202);
+    margin-bottom: 20px;
      
-    &__image {}
-    &__titre {}
-    &__text {}
-    &__heart {}
+    &__image {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    &-sub {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1px;
+        &__titre {
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        &__text {
+            margin-top: 5px;
+            font-weight: 300;
+        }
+        &__heart {}
+    }
     &__new-mint {}
+    
 
 }
 
