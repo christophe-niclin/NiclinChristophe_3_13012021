@@ -3,113 +3,134 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">         
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-        <link href="sass/main.scss" rel="stylesheet">
+        <link href="sass/main.css" rel="stylesheet">
         <title>Menu 1</title>
     </head>
     <body>
 
         <header class="header">
-            <nav class="header__nav">
-            <a class="header__a"><i class="fas fa-arrow-left header__icon"></i></a>
-            </nav>
+            <a href="index.html" class="header__a"><i class="fas fa-arrow-left header__icon"></i></a>
             <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo oh my food">
         </header>
         <section class="slider">
-            <img class="slider__image" src="" alt="restaurant">
+            <img class="slider__image" src="images/restaurants/med/restaurant_med_1.jpg" alt="restaurant">
         </section>
-        <section class="carte">
-            <h1 class="carte__titre"></h1>
-            <div class="card__heart"></div>
+        <section class="carte background-grey">
+            <h1 class="carte__titre">La palette du goût</h1>
+            <div class="carte__heart">
+            <i class="far fa-heart heart heart--menu"></i>
+            </div>
+            
             <section class="menu">
-                <h2 class="menu__titre"></h2>
+                <h2 class="menu__titre">Entrées</h2>
                 <div class="menu__card card">
-                    <h3 class="card__titre"></h3>
-                    <p class="card__text"></p>
-                    <p class="card__price"></p>
+                    <div class="card-sub card-sub--menu">
+                    <h3 class="card-sub__titre">Fricassée d'escargot</h3>
+                    <p class="card-sub__text">Au piment d'Espelette </p>
+                    <p class="card-sub__price">25€</p>
+                    </div>
                     <div class="card__click card__click-mint">
                         <div class="card__click-check"></div>
                     </div>
                 </div>
                 <div class="menu__card card">
-                    <h3 class="card__titre"></h3>
-                    <p class="card__text"></p>
-                    <p class="card__price"></p>
+                    <div class="card-sub">
+                    <h3 class="card-sub__titre">Foie gras de canard mi-cuit</h3>
+                    <p class="card-sub__text">Et ses copeaux de truffe noire</p>
+                    <p class="card-sub__price">35€</p>
+                    </div>
                     <div class="card__click card__click-mint">
                         <div class="card__click-check"></div>
                     </div>
                 </div>
                 <div class="menu__card card">
-                    <h3 class="card__titre"></h3>
-                    <p class="card__text"></p>
-                    <p class="card__price"></p>
+                    <div class="card-sub">
+                    <h3 class="card-sub__titre">Oeuf au plat</h3>
+                    <p class="card-sub__text">Assaisonné à la truffe sur lit de caviar</p>
+                    <p class="card-sub__price">20€</p>
+                    </div>
                     <div class="card__click card__click-mint">
                         <div class="card__click-check"></div>
                     </div>
                 </div>
             </section>
             <section class="menu">
-                <h2 class="menu__titre"></h2>
+                <h2 class="menu__titre">Plats</h2>                
                 <div class="menu__card card">
-                    <h3 class="card__titre"></h3>
-                    <p class="card__text"></p>
-                    <p class="card__price"></p>
+                    <div class="card-sub">
+                    <h3 class="card-sub__titre">Filet de boeuf aux herbes</h3>
+                    <p class="card-sub__text">Accompagné de sa ribambelle de légumes</p>
+                    <p class="card-sub__price">40€</p>
+                    </div>
                     <div class="card__click card__click-mint">
                         <div class="card__click-check"></div>
                     </div>
                 </div>
                 <div class="menu__card card">
-                    <h3 class="card__titre"></h3>
-                    <p class="card__text"></p>
-                    <p class="card__price"></p>
+                    <div class="card-sub">
+                    <h3 class="card-sub__titre">Parmentier de queue de boeuf</h3>
+                    <p class="card-sub__text">À la truffe noire sur sa purée de panais</p>
+                    <p class="card-sub__price">35€</p>
+                    </div>
                     <div class="card__click card__click-mint">
                         <div class="card__click-check"></div>
                     </div>
                 </div>
                 <div class="menu__card card">
-                    <h3 class="card__titre"></h3>
-                    <p class="card__text"></p>
-                    <p class="card__price"></p>
+                    <div class="card-sub">
+                    <h3 class="card-sub__titre">Filet de turbot</h3>
+                    <p class="card-sub__text">Aux agrumes</p>
+                    <p class="card-sub__price">44€</p>
+                    </div>
                     <div class="card__click card__click-mint">
                         <div class="card__click-check"></div>
                     </div>
                 </div>
             </section>
             <section class="menu">
-                <h2 class="menu__titre"></h2>
+                <h2 class="menu__titre">Desserts</h2>
                 <div class="menu__card card">
-                    <h3 class="card__titre"></h3>
-                    <p class="card__text"></p>
-                    <p class="card__price"></p>
+                    <div class="card-sub">
+                    <h3 class="card-sub__titre">Paris-Brest</h3>
+                    <p class="card-sub__text">Revisité</p>
+                    <p class="card-sub__price">18€</p>
+                    </div>
                     <div class="card__click card__click-mint">
                         <div class="card__click-check"></div>
                     </div>
                 </div>
                 <div class="menu__card card">
-                    <h3 class="card__titre"></h3>
-                    <p class="card__text"></p>
-                    <p class="card__price"></p>
+                    <div class="card-sub">
+                    <h3 class="card-sub__titre">Macaron au chocolat d'exception </h3>
+                    <p class="card-sub__text">Et glace à la vanille de Madagascar</p>
+                    <p class="card-sub__price">22€</p>
+                    </div>
                     <div class="card__click card__click-mint">
                         <div class="card__click-check"></div>
                     </div>
                 </div>
                 <div class="menu__card card">
-                    <h3 class="card__titre"></h3>
-                    <p class="card__text"></p>
-                    <p class="card__price"></p>
+                    <div class="card-sub">
+                    <h3 class="card-sub__titre">Mousse au chocolat </h3>
+                    <p class="card-sub__text">Au piment d'Espelette et à la truffe noire</p>
+                    <p class="card-sub__price">23€</p>
+                    </div>
                     <div class="card__click card__click-mint">
                         <div class="card__click-check"></div>
                     </div>
                 </div>
-            </section>            
-            <button class="section__carte--button">
-                <span class="carte__button--text"></span>
-            </button>
+            </section>
+            <div class="button--center">            
+            <button class="button button--carte">Commander</button>
+            </div>
         </section>
         <footer class="footer">
-            <img class="footer__logo" alt="logo" src="">
+            <h4 class="footer__titre">ohmyfood</h4>
             <div>
             <i class="fas fa-utensils footer__icon"></i>
             <a class="footer__a" href="#">Proposer un restaurant</a>

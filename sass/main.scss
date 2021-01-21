@@ -25,18 +25,39 @@ $colour-third: #99e2d0;
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-
+.background-grey {
+    background-color: rgb(247, 247, 247);
+}
+.background-grey--dark {
+    background-color: rgb(238, 238, 238);
+}
+/* Header */
 .header {
     padding: 0.5em;
     text-align: center;
+    position: relative;
     &__logo  {
         height: 1.6em;
     }
+    &__a {
+        
+
+        
+    }
+    &__icon {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 2em;
+        transform: translate(-50%, -50%);
+
+    }
 }
+
+/* Accueil */
 .sub-header {
     display: flex;
     justify-content: center;
-    background-color: rgb(238, 238, 238);
     height: 3em;
     box-shadow: inset 0px 11px 10px -15px grey;
     &__icon {
@@ -54,7 +75,7 @@ body {
 .hero {
     padding: 1em 2em 2em 2em;
     text-align: center;
-    background-color: rgb(247, 247, 247);
+   
 
 
     &__titre {
@@ -77,10 +98,20 @@ body {
     color: white;
     font-weight: bold;
     box-shadow: 0px 5px 10px rgb(202, 202, 202);
+
+    &--hero {margin-bottom: 1em; }
+    &--carte {
+        padding-left: 2em;
+        padding-right: 2em;
+        margin-bottom: 3em;
+    }
+    &--center  {
+        text-align: center;
+    }
+
+
 }
-.button--hero {
-    margin-bottom: 1em;
-}
+
 
 .operation {
     padding: 1em;
@@ -91,7 +122,6 @@ body {
 .step {
     display: flex;
     position: relative;
-    background-color: rgb(240, 240, 240);
     margin-bottom: 2em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -127,7 +157,6 @@ body {
 
 .restaurant {
     padding: 1em;
-    background-color: rgb(247, 247, 247);
     padding-top: 2em;
 
 
@@ -151,6 +180,7 @@ body {
         padding-right: 1em;
         padding-bottom: 1px;
         position: relative;
+        &--menu {}
         &__titre {
             margin-bottom: 0;
             font-weight: bold;
@@ -165,6 +195,7 @@ body {
             right: 2em;
 
         }
+        &__price {}
     }
     &__new-mint {
         position: absolute;
@@ -178,12 +209,14 @@ body {
         border-radius: 2px;
 
     }
+    &__click {
+        &-mint {}
+        &-check {}
+    }
     
 
 }
-.heart {
-    font-size: 1.5em;
-}
+
 
 .footer {
     background-color: rgb(49, 49, 49);
@@ -210,3 +243,34 @@ body {
         padding-bottom: 10px;
     }
 }
+
+/* Menu */
+.slider {
+    &__image {
+        width: 100%;
+    }
+}
+
+.carte {
+
+    &__titre {}
+    &__heart {}
+}
+
+
+.heart {
+    font-size: 1.5em;
+
+    &--menu {
+
+    }
+}
+
+.menu {
+
+    &__titre {}
+    &__card {}
+
+}
+
+

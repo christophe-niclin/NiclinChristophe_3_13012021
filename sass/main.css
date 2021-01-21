@@ -13,19 +13,37 @@ body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+.background-grey {
+  background-color: #f7f7f7;
+}
+
+.background-grey--dark {
+  background-color: #eeeeee;
+}
+
+/* Header */
 .header {
   padding: 0.5em;
   text-align: center;
+  position: relative;
 }
 
 .header__logo {
   height: 1.6em;
 }
 
+.header__icon {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 2em;
+  transform: translate(-50%, -50%);
+}
+
+/* Accueil */
 .sub-header {
   display: flex;
   justify-content: center;
-  background-color: #eeeeee;
   height: 3em;
   box-shadow: inset 0px 11px 10px -15px grey;
 }
@@ -44,7 +62,6 @@ body {
 .hero {
   padding: 1em 2em 2em 2em;
   text-align: center;
-  background-color: #f7f7f7;
 }
 
 .hero__titre {
@@ -73,6 +90,16 @@ body {
   margin-bottom: 1em;
 }
 
+.button--carte {
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: 3em;
+}
+
+.button--center {
+  text-align: center;
+}
+
 .operation {
   padding: 1em;
 }
@@ -80,7 +107,6 @@ body {
 .step {
   display: flex;
   position: relative;
-  background-color: #f0f0f0;
   margin-bottom: 2em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -118,7 +144,6 @@ body {
 
 .restaurant {
   padding: 1em;
-  background-color: #f7f7f7;
   padding-top: 2em;
 }
 
@@ -171,10 +196,6 @@ body {
   border-radius: 2px;
 }
 
-.heart {
-  font-size: 1.5em;
-}
-
 .footer {
   background-color: #313131;
   color: white;
@@ -200,4 +221,13 @@ body {
   text-decoration: none;
   display: inline-block;
   padding-bottom: 10px;
+}
+
+/* Menu */
+.slider__image {
+  width: 100%;
+}
+
+.heart {
+  font-size: 1.5em;
 }
