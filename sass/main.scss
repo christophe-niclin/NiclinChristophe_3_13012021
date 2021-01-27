@@ -247,10 +247,11 @@ body {
 
     }
     &__click {
-        width: 80px;
+        width: 0px;
         border-radius: 0 15px 15px 0;
         display: flex;
         justify-content: center;
+        
                 
        
     
@@ -265,6 +266,7 @@ body {
             border-radius: 50%;
             display: flex;
             justify-content: center;
+            overflow: hidden;
 
         }
         &-icon {
@@ -375,8 +377,53 @@ body {
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
+        &:hover {
+            & > .card__click {
+                animation-name: mint;
+                animation-duration: 0.3s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+                & > .card__click-check {
+                    animation-name: check;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                    animation-iteration-count: 1;
+            }
+           
+            }
+        }
     }
 
 }
 
+
+
+@keyframes mint {
+    0%{
+        width: 0px;
+    }
+    
+    100% {
+        width: 80px;
+    }
+}
+@keyframes check {
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    
+    60% {width: 0em;
+        height: 0em;}
+    80% {width: 2.2em;
+        height: 2.2em;}
+    
+    
+    
+    100% {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+}
 
