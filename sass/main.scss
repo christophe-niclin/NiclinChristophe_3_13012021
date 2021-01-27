@@ -189,6 +189,7 @@ body {
         padding-right: 1em;
         padding-bottom: 1px;
         position: relative;
+        width: 100%;
         &--menu {
             padding: 0.7em;
             margin-bottom: 1em;
@@ -214,6 +215,7 @@ body {
             &--menu {
                 margin: 0;
                 font-size: 0.9em;
+                margin-bottom: -10px;
 
             }
         }
@@ -245,11 +247,31 @@ body {
 
     }
     &__click {
+        width: 80px;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        justify-content: center;
                 
        
     
-        &-mint {}
-        &-check {}
+        &-mint {
+            background-color: $colour-third;
+        }
+        &-check {
+            align-self: center;
+            height: 1.5em;
+            width: 1.5em;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+
+        }
+        &-icon {
+            color: $colour-third;
+            align-self: center;
+
+        }
     }
     
 
@@ -350,6 +372,9 @@ body {
         }
     }
     &__card {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
     }
 
 }
