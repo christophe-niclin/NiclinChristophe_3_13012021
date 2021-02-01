@@ -354,21 +354,22 @@ body {
     color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    &:hover {
-        cursor: pointer;
-        animation-name: heart;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
+    &--second {
+        font-size: 1.5em;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+        position: absolute;
 
     }
+    
 
     &--menu {
 
     }
 }
 .heart-box {
-    background-color: aqua;
+    background-color: rgb(247, 247, 247);
     width: 50px;
     height: 30px;    
     position: absolute;
@@ -448,44 +449,23 @@ body {
     }
 
 }
-@keyframes heart {
-    0% {
-        color: pink;
 
-    }
-    10% {
-        color: pink;
-        
-    }
-    20% {
-        
-    }
-    30% {
-        
-    }
-    40% {
-        
-    }
-    50% {
-        
-    }
-    60% {
-        
-    }
-    70% {
-        
-    }
-    80% {
-        
-    }
-    90% {color: pink;
-        
-    }
-    100% {
-        color: pink;
-        
-        
-    }
+.carte-header__heart .heart-box {
+    transition: all 0.6s ease;
+  }
+  .carte-header__heart .heart {
+    transition: all 0.6s ease;
+  }
+  .carte-header__heart:hover  {
+      cursor: pointer;
+  }
+  
+  .carte-header__heart:hover .heart-box {
+    z-index: 10;
+    height: 0px;
+  }
+  .carte-header__heart:hover .heart {
+    color: pink;
+    -webkit-text-stroke-color: pink;
 
-
-}
+  }  
