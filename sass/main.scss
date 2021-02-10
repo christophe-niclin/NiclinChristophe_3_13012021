@@ -220,6 +220,16 @@ body {
     &__titre {}
 }
 
+@mixin multiLineEllipsis($lineHeight: 1em, $lineCount: 1, $bgColor: white){
+    overflow: hidden;
+    line-height: $lineHeight;
+    max-height: $lineHeight * $lineCount; 
+    /* pas de point, si point avec white-space bug à corriger */
+    
+    
+    
+  }
+
 .card {
     background-color: white;
     border-radius: 15px;
@@ -260,10 +270,9 @@ body {
                 width: 70%;
                 padding-right: 10px;
 
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                width: 100px; /* à 100px pas de bug, mais trop court et pas augmentation prog */
+                
+
+                @include multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white);
 
 
 
@@ -284,10 +293,9 @@ body {
                 width: 70%;
                 padding-right: 10px;
                 
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                width: 100px;
+                
+
+                @include multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white);
     
 
 

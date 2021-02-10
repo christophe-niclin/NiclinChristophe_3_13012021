@@ -252,10 +252,9 @@ body {
   width: 70%;
   padding-right: 10px;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100px;
-  /* à 100px pas de bug, mais trop court et pas augmentation prog */
+  line-height: 1.2em;
+  max-height: 1.2em;
+  /* pas de point, si point avec white-space bug à corriger */
 }
 
 .card-sub__text {
@@ -273,9 +272,9 @@ body {
   width: 70%;
   padding-right: 10px;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100px;
+  line-height: 1.2em;
+  max-height: 1.2em;
+  /* pas de point, si point avec white-space bug à corriger */
 }
 
 .card-sub__heart {
