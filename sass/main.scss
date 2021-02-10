@@ -31,6 +31,59 @@ body {
 .background-grey--dark {
     background-color: rgb(238, 238, 238);
 }
+/* Loading spinner */
+#loading-spinner {
+    &--bg {
+        position: fixed;
+        top: 0;
+        left: -0.01%;
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: bg-pink;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;}
+    &--main {
+        position: relative;
+        border: 10px solid #f3f3f3; 
+        border-top: 10px solid $colour-primary; 
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        
+        z-index: 1001;
+        animation-name: spin;
+        animation-duration: 1.3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        opacity: 1;
+    }
+}
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @keyframes bg-pink {
+    80% {
+      opacity: 1;
+    }
+    90% {opacity: 0;
+      
+      left: 0;
+    }
+    100% {
+        left: -100%;
+        opacity: 0;
+    }
+  }
+
+
 /* Header */
 .header {
     padding: 0.5em;
