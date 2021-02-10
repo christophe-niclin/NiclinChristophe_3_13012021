@@ -371,6 +371,12 @@ body {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  animation-name: card-delay;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  opacity: 0;
 }
 
 .menu__card:hover {
@@ -389,6 +395,42 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
+}
+
+.delay--1 {
+  animation-delay: 0.4s;
+}
+
+.delay--2 {
+  animation-delay: 0.7s;
+}
+
+.delay--3 {
+  animation-delay: 1s;
+}
+
+.delay--4 {
+  animation-delay: 1.3s;
+}
+
+.delay--5 {
+  animation-delay: 1.6s;
+}
+
+.delay--6 {
+  animation-delay: 1.9s;
+}
+
+.delay--7 {
+  animation-delay: 2.2s;
+}
+
+.delay--8 {
+  animation-delay: 2.5s;
+}
+
+.delay--9 {
+  animation-delay: 2.8s;
 }
 
 @keyframes mint {
@@ -439,4 +481,15 @@ body {
 .carte-header__heart:hover .heart {
   color: pink;
   -webkit-text-stroke-color: pink;
+}
+
+@keyframes card-delay {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
 }

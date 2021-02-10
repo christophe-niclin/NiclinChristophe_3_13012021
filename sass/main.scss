@@ -398,6 +398,12 @@ body {
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
+        animation-name: card-delay;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        opacity: 0;
         &:hover {
             cursor: pointer;
             & > .card__click {
@@ -417,6 +423,17 @@ body {
         }
     }
 
+}
+.delay {
+    &--1 {animation-delay: 0.4s;}
+    &--2 {animation-delay: 0.7s;}
+    &--3 {animation-delay: 1s;}
+    &--4 {animation-delay: 1.3s;}
+    &--5 {animation-delay: 1.6s;}
+    &--6 {animation-delay: 1.9s;}
+    &--7 {animation-delay: 2.2s;}
+    &--8 {animation-delay: 2.5s;}
+    &--9 {animation-delay: 2.8s;}
 }
 
 
@@ -469,3 +486,16 @@ body {
     -webkit-text-stroke-color: pink;
 
   }  
+
+  @keyframes card-delay {
+      0% {
+          top: 20px;
+          opacity: 0;
+
+      }
+      100% {
+          top: 0px;
+          opacity: 1;
+
+      }
+  }
