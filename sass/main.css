@@ -366,6 +366,10 @@ body {
   width: 100%;
 }
 
+.slider__image--desktop {
+  display: none;
+}
+
 .carte {
   position: relative;
   top: -3em;
@@ -573,5 +577,47 @@ body {
   100% {
     top: 0px;
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .slider__image {
+    display: none;
+  }
+  .slider__image--desktop {
+    display: block;
+    height: 550px;
+    width: 100%;
+  }
+  .carte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .carte-header {
+    width: 100%;
+    text-align: center;
+  }
+  .menu {
+    margin: 20px;
+  }
+  .menu:nth-child(2) {
+    width: 30%;
+  }
+  .menu:nth-child(3) {
+    width: 30%;
+  }
+  .menu:nth-child(4) {
+    width: 30%;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__titre {
+    width: 100%;
+  }
+  .footer__a {
+    margin-right: 1em;
   }
 }
