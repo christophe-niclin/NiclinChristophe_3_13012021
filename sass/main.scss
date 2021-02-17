@@ -1,7 +1,9 @@
 // Variables
 $colour-primary: #9356dc;
+$colour-primary-dark: #41107e;
 $colour-secondary: #ff79da;
 $colour-third: #99e2d0;
+
 
 // Functions
 
@@ -24,6 +26,7 @@ $colour-third: #99e2d0;
 */
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 .background-grey {
     background-color: rgb(247, 247, 247);
@@ -151,6 +154,13 @@ body {
     color: white;
     font-weight: bold;
     box-shadow: 0px 5px 10px rgb(202, 202, 202);
+    &:hover {
+        opacity: 0.85;
+        cursor: pointer;
+        color: $colour-primary-dark;
+        box-shadow: 0px 5px 10px rgb(128, 128, 128);
+
+    }
 
     &--hero {margin-bottom: 1em; }
     &--carte {
