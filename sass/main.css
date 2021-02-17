@@ -407,15 +407,13 @@ body {
 .heart {
   font-size: 1.5em;
   color: white;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
 }
 
 .heart--second {
   font-size: 1.5em;
   color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
   position: absolute;
 }
 
@@ -590,8 +588,10 @@ body {
 }
 
 .carte-header__heart:hover .heart {
-  color: pink;
-  -webkit-text-stroke-color: pink;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: transparent;
 }
 
 @keyframes card-delay {
