@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 .nav {
     color: white;
@@ -252,9 +251,8 @@ body {
   width: 70%;
   padding-right: 10px;
   overflow: hidden;
-  line-height: 1.2em;
-  max-height: 1.2em;
-  /* pas de point, si point avec white-space bug à corriger */
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .card-sub__text {
@@ -272,9 +270,8 @@ body {
   width: 70%;
   padding-right: 10px;
   overflow: hidden;
-  line-height: 1.2em;
-  max-height: 1.2em;
-  /* pas de point, si point avec white-space bug à corriger */
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .card-sub__heart {
@@ -454,7 +451,11 @@ body {
 }
 
 .menu__card {
-  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px #cacaca;
+  position: relative;
+  margin: 5px 20px 10px 20px;
   display: flex;
   justify-content: space-between;
   animation-name: card-delay;
@@ -481,6 +482,14 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
+}
+
+.menu__card:hover > .card-sub {
+  animation-name: mint-sub;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
 }
 
 .delay--1 {
@@ -517,6 +526,14 @@ body {
 
 .delay--9 {
   animation-delay: 2.8s;
+}
+
+@keyframes mint-sub {
+  0% {
+  }
+  100% {
+    width: calc(100% - 100px);
+  }
 }
 
 @keyframes mint {
@@ -694,5 +711,16 @@ body {
   .menu:nth-child(4) {
     width: 29.5%;
     width: calc(33% - 40px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .operation, .restaurant, .slider, .carte {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .restaurant {
+    border-radius: 5px;
   }
 }
