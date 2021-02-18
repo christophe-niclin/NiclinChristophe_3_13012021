@@ -3,15 +3,165 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand" rel="stylesheet">
-        <link href="sass/main.scss" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">         
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link href="sass/main.css" rel="stylesheet">
         <title>Menu 2</title>
     </head>
     <body>
-
-        
-        
+        <header class="header">
+            <a href="index.html" class="header__a"><i class="fas fa-arrow-left header__icon"></i></a>
+            <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="logo oh my food">
+        </header>
+        <section class="slider">
+            <img class="slider__image" src="images/restaurants/med/restaurant_med_2.jpg" alt="restaurant">
+            <img class="slider__image--desktop" src="images/restaurants/max/2.jpg" alt="restaurant">
+        </section>
+        <section class="carte background-grey">
+            <div class="carte-header">
+            <h1 class="carte-header__titre">La note enchantée</h1>
+            <div class="carte-header__heart">
+                <!-- heart 
+                    méthode 1 => box par dessus avec height qui diminue
+                    méthode 2 => autre icon pat dessus (exemple carré rempli), qui diminue de height
+                -->
+                <i class="fas fa-heart heart--second heart--menu"></i>
+                <i class="fas fa-heart heart heart--menu"></i>
+                <div class="heart-box heart-box--menu"></div>
+            </div>
+            </div>            
+            <section class="menu">
+                <h2 class="menu__titre">Entrées</h2>
+                <span class="menu__titre-ligne"></span>
+                <div class="menu__card delay--1">
+                    <div class="card-sub card-sub--menu">
+                    <h3 class="card-sub__titre card-sub__titre--menu">Ravioles de foie gras</h3>
+                    <p class="card-sub__text card-sub__text--menu">Accompagnés de leur crème à la truffe</p>
+                    <span class="card-sub__price">25€</span>
+                    </div>
+                    <div class="card__click card__click-mint">
+                        <div class="card__click-check"><i class="fas fa-check card__click-icon"></i></div>
+                    </div>
+                </div>
+                <div class="menu__card delay--2">
+                    <div class="card-sub card-sub--menu">
+                    <h3 class="card-sub__titre card-sub__titre--menu">Caviar osciètre</h3>
+                    <p class="card-sub__text card-sub__text--menu">Sur blini à la farine de blé noir</p>
+                    <span class="card-sub__price">35€</span>
+                    </div>
+                    <div class="card__click card__click-mint">
+                        <div class="card__click-check"><i class="fas fa-check card__click-icon"></i></div>
+                    </div>
+                </div>
+                <div class="menu__card delay--3">
+                    <div class="card-sub card-sub--menu">
+                    <h3 class="card-sub__titre card-sub__titre--menu">Homard et espuma de potiron</h3>
+                    <p class="card-sub__text card-sub__text--menu">Mariné aux zestes d'orange</p>
+                    <span class="card-sub__price">20€</span>
+                    </div>
+                    <div class="card__click card__click-mint">
+                        <div class="card__click-check"><i class="fas fa-check card__click-icon"></i></div>
+                    </div>
+                </div>
+                <div class="menu__card delay--4">
+                    <div class="card-sub card-sub--menu">
+                    <h3 class="card-sub__titre card-sub__titre--menu">Foie gras de canard cuit entier</h3>
+                    <p class="card-sub__text card-sub__text--menu">Confiture de figue et pain toasté</p>
+                    <span class="card-sub__price">35€</span>
+                    </div>
+                    <div class="card__click card__click-mint">
+                        <div class="card__click-check"><i class="fas fa-check card__click-icon"></i></div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu">
+                <h2 class="menu__titre">Plats</h2>
+                <span class="menu__titre-ligne"></span>                
+                <div class="menu__card delay--5">
+                    <div class="card-sub card-sub--menu">
+                    <h3 class="card-sub__titre card-sub__titre--menu">Noix de coquilles Saint-Jacques</h3>
+                    <p class="card-sub__text card-sub__text--menu">Sur lit de purée de céleri-rave</p>
+                    <span class="card-sub__price">40€</span>
+                    </div>
+                    <div class="card__click card__click-mint">
+                        <div class="card__click-check"><i class="fas fa-check card__click-icon"></i></div>
+                    </div>
+                </div>
+                <div class="menu__card delay--6">
+                    <div class="card-sub card-sub--menu">
+                    <h3 class="card-sub__titre card-sub__titre--menu">Langoustine poêlée</h3>
+                    <p class="card-sub__text card-sub__text--menu">Purée de patate douce</p>
+                    <span class="card-sub__price">35€</span>
+                    </div>
+                    <div class="card__click card__click-mint">
+                        <div class="card__click-check"><i class="fas fa-check card__click-icon"></i></div>
+                    </div>
+                </div>
+                <div class="menu__card delay--7">
+                    <div class="card-sub card-sub--menu">
+                    <h3 class="card-sub__titre card-sub__titre--menu">Mijoté de queue de boeuf</h3>
+                    <p class="card-sub__text card-sub__text--menu">Et riz sauvage aux zestes de citron</p>
+                    <span class="card-sub__price">44€</span>
+                    </div>
+                    <div class="card__click card__click-mint">
+                        <div class="card__click-check"><i class="fas fa-check card__click-icon"></i></div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu">
+                <h2 class="menu__titre">Desserts</h2>
+                <span class="menu__titre-ligne"></span>                
+                <div class="menu__card delay--8">
+                    <div class="card-sub card-sub--menu">
+                    <h3 class="card-sub__titre card-sub__titre--menu">Macaron noisette et chocolat</h3>
+                    <p class="card-sub__text card-sub__text--menu">Glace au caramel brun et sel de Guérande</p>
+                    <span class="card-sub__price">18€</span>
+                    </div>
+                    <div class="card__click card__click-mint">
+                        <div class="card__click-check"><i class="fas fa-check card__click-icon"></i></div>
+                    </div>
+                </div>
+                <div class="menu__card delay--9">
+                    <div class="card-sub card-sub--menu">
+                    <h3 class="card-sub__titre card-sub__titre--menu">Baba au rhum revisité</h3>
+                    <p class="card-sub__text card-sub__text--menu">Avec son coulis de citron</p>
+                    <span class="card-sub__price">22€</span>
+                    </div>
+                    <div class="card__click card__click-mint">
+                        <div class="card__click-check"><i class="fas fa-check card__click-icon"></i></div>
+                    </div>
+                </div>
+                <div class="menu__card delay--10">
+                    <div class="card-sub card-sub--menu">
+                    <h3 class="card-sub__titre card-sub__titre--menu">Tarte au citron meringuée</h3>
+                    <p class="card-sub__text card-sub__text--menu">Déstructurée</p>
+                    <span class="card-sub__price">23€</span>
+                    </div>
+                    <div class="card__click card__click-mint">
+                        <div class="card__click-check"><i class="fas fa-check card__click-icon"></i></div>
+                    </div>
+                </div>
+            </section>
+            <div class="button--center button--res">            
+            <button class="button button--carte">Commander</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <h4 class="footer__titre">ohmyfood</h4>
+            <div>
+            <i class="fas fa-utensils footer__icon"></i>
+            <a class="footer__a" href="#">Proposer un restaurant</a>
+            </div>
+            <div>
+            <i class="fas fa-hands-helping footer__icon"></i>
+            <a class="footer__a" href="#">Devenir partenaire</a>
+            </div>
+            <a class="footer__a" href="#">Mentions légales</a>
+            <br>
+            <a class="footer__a" href="mailto:dummy.mail@dummy.com">Contact</a>
+        </footer>
     </body>
 </html>

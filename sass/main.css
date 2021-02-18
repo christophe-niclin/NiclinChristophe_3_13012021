@@ -557,6 +557,10 @@ body {
   animation-delay: 2.8s;
 }
 
+.delay--10 {
+  animation-delay: 3.1s;
+}
+
 @keyframes mint-sub {
   0% {
   }
