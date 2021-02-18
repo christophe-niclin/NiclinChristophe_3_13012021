@@ -182,13 +182,26 @@ body {
   box-shadow: 0px 5px 10px #cacaca;
 }
 
+.step:hover {
+  background-color: #f3e9ff;
+  cursor: pointer;
+}
+
+.step:hover > .step__icon {
+  color: #9356dc;
+}
+
 .step__icon {
   padding-left: 2em;
   align-self: center;
+  font-size: 18px;
+  color: gray;
+  width: 20px;
 }
 
 .step__text {
   padding-left: 1.5em;
+  font-weight: 500;
 }
 
 .step__number-left {
@@ -237,12 +250,15 @@ body {
   padding-right: 1em;
   padding-bottom: 1px;
   position: relative;
-  width: calc(100% - 15px);
+  width: 97%;
+  width: calc(100% - 18px);
 }
 
 .card-sub--menu {
   padding: 0.7em;
   margin-bottom: 1em;
+  width: 92%;
+  width: calc(100% - 15px);
 }
 
 .card-sub__titre {
