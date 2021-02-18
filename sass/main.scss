@@ -237,6 +237,13 @@ body {
 .restaurant {
     padding: 1em;
     padding-top: 2em;
+    &__a {
+        text-decoration: none;
+        outline: none;
+        color: inherit;
+        display: block;
+
+    }
 
 
     &__titre {}

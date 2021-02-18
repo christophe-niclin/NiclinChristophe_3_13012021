@@ -228,6 +228,13 @@ body {
   padding-top: 2em;
 }
 
+.restaurant__a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  display: block;
+}
+
 .card {
   background-color: white;
   border-radius: 15px;
