@@ -1,0 +1,15 @@
+.sub-header {
+    display: flex;
+    justify-content: center;
+    height: 3em;
+    box-shadow: inset 0px 11px 10px -15px grey;
+    &__icon {
+        align-self: center;
+        padding-right: 1em;
+        font-size: 0.9em;
+    }
+    &__text {
+        align-self: center;
+        font-size: 0.9em;
+    }
+}

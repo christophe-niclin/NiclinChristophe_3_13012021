@@ -1,0 +1,15 @@
+.header {
+    padding: 0.5em;
+    text-align: center;
+    position: relative;
+    &__logo  {
+        height: 1.6em;
+    }
+    &__icon {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 2em;
+        transform: translate(-50%, -50%);
+    }
+}

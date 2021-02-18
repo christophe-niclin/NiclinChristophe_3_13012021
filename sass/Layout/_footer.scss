@@ -1,0 +1,23 @@
+.footer {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.4em;
+    margin-top: 2em;
+    padding-bottom: 2em;
+    &__titre {
+        font-family: Shrikhand;
+    }
+    &__icon {
+        padding-right: 10px;
+        width: 20px;
+        font-size: 0.8em;
+    }
+    &__a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+}

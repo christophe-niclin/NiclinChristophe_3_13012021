@@ -1,0 +1,14 @@
+.hero {
+    padding: 1em 2em 2em 2em;
+    text-align: center; 
+    &__titre {
+        margin-bottom: 0;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    &__text {
+        color: grey;
+        margin-top: 0.5em;
+        padding-bottom: 1em;
+    }
+}

@@ -1,0 +1,105 @@
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgb(202, 202, 202);    
+    position: relative;
+    &--margin-bottom {
+        margin-bottom: 20px;
+    }     
+    &__image {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    &-sub {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1px;
+        position: relative;      
+        width: 97%;                  
+        width: calc(100% - 18px);     
+        &--menu {
+            padding: 0.7em;
+            margin-bottom: 1em;  
+            width: 92%;            
+            width: calc(100% - 15px); 
+        }
+        &__titre {            
+            font-weight: bold;
+            &--main {
+                margin-bottom: 0;
+            }
+            &--menu {
+                margin: 0;
+                margin-bottom: 5px;
+                width: 70%;
+                padding-right: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        &__text {            
+            font-weight: 300;
+            &--main {
+                margin-top: 5px;
+            }
+            &--menu {
+                margin: 0;
+                font-size: 0.9em;
+                margin-bottom: -10px;
+                width: 70%;
+                padding-right: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        &__heart {
+            position: absolute;
+            top: 0.5em;
+            right: 2em;
+        }
+        &__price {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 0.9em;
+            font-weight: bold;            
+        }
+    }
+    &__new-mint {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        background-color: $colour-third;
+        color: #259277;
+        padding: 0.4em 0.8em 0.4em 0.8em;
+        font-weight: 500;
+        font-size: 0.9em;
+        border-radius: 2px;
+    }
+    &__click {
+        width: 0px;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        justify-content: center;
+        &-mint {
+            background-color: $colour-third;
+        }
+        &-check {
+            align-self: center;
+            height: 1.5em;
+            width: 1.5em;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        &-icon {
+            color: $colour-third;
+            align-self: center;
+        }
+    }  
+}

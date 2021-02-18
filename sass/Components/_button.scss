@@ -1,0 +1,28 @@
+.button {
+    padding: 1em 1.2em 1em 1.2em;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgb(202, 202, 202);
+    &:hover {
+        opacity: 0.85;
+        cursor: pointer;
+        color: $colour-primary-dark;
+        box-shadow: 0px 5px 10px rgb(128, 128, 128);
+    }
+    &--hero {margin-bottom: 1em; }
+    &--carte {
+        padding-left: 2em;
+        padding-right: 2em;
+        margin-bottom: 3em;
+        margin-top: 2em;
+        font-size: 1em;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    &--center  {
+        text-align: center;
+    }
+}

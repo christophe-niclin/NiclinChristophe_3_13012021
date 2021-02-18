@@ -1,0 +1,9 @@
+.slider {
+    z-index: 1;
+    &__image {
+        width: 100%;
+        &--desktop {
+            display: none;
+        }
+    }
+}

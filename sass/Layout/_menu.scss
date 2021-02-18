@@ -1,0 +1,53 @@
+.menu {
+    &__titre {
+        margin-top: 1.5em;
+        font-weight: 300;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        &-ligne {
+            width: 50px;
+            height: 3.5px;
+            background-color: $colour-third;
+            display: block;
+            margin-bottom: 1em;
+        }
+    }
+    &__card {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 5px 10px rgb(202, 202, 202);    
+        position: relative;
+        margin: 5px 20px 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        animation-name: card-delay;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        opacity: 0;
+        &:hover {
+            cursor: pointer;
+            & > .card__click {
+                animation-name: mint;
+                animation-duration: 0.3s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;                
+                & > .card__click-check {
+                    animation-name: check;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                    animation-iteration-count: 1;
+                }           
+            }
+            & > .card-sub {
+                animation-name: mint-sub;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                animation-duration: 0.3s;
+                animation-timing-function: ease;
+            }
+        }
+    }
+}
