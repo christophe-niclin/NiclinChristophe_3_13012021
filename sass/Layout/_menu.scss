@@ -31,12 +31,12 @@
             cursor: pointer;
             & > .card__click {
                 animation-name: mint;
-                animation-duration: 0.3s;
+                animation-duration: 0.4s;
                 animation-fill-mode: forwards;
                 animation-iteration-count: 1;                
-                & > .card__click-check {
+                & > .card__click-check .card__click-icon {
                     animation-name: check;
-                    animation-duration: 1s;
+                    animation-duration: 0.4s;
                     animation-fill-mode: forwards;
                     animation-iteration-count: 1;
                 }           
@@ -45,7 +45,7 @@
                 animation-name: mint-sub;
                 animation-iteration-count: 1;
                 animation-fill-mode: forwards;
-                animation-duration: 0.3s;
+                animation-duration: 0.4s;
                 animation-timing-function: ease;
             }
         }

@@ -38,21 +38,27 @@
 
 @keyframes check {
   0% {
-    width: 0px;
-    height: 0px;
+    transform: rotate(130deg);
   }
-  60% {
-    width: 0em;
-    height: 0em;
-  }
-  80% {
-    width: 2.2em;
-    height: 2.2em;
+  20% {
+    transform: rotate(130deg);
   }
   100% {
-    width: 1.5em;
-    height: 1.5em;
+    transform: rotate(360deg);
   }
+  /*
+    0%{
+        width: 0px;
+        height: 0px;
+    }    
+    60% {width: 0em;
+        height: 0em;}
+    80% {width: 2.2em;
+        height: 2.2em;}
+    100% {
+        width: 1.5em;
+        height: 1.5em;
+    }*/
 }
 
 .carte-header__heart .heart-box {
@@ -674,14 +680,14 @@ body {
 
 .menu__card:hover > .card__click {
   animation-name: mint;
-  animation-duration: 0.3s;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
 
-.menu__card:hover > .card__click > .card__click-check {
+.menu__card:hover > .card__click > .card__click-check .card__click-icon {
   animation-name: check;
-  animation-duration: 1s;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }
@@ -690,7 +696,7 @@ body {
   animation-name: mint-sub;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-duration: 0.3s;
+  animation-duration: 0.4s;
   animation-timing-function: ease;
 }
 
